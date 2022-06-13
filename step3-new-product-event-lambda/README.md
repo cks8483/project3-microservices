@@ -23,7 +23,7 @@ curl --location --request POST 'http://localhost:3000/send'
 --data-raw '{ "MessageGroupId": "stock-empty-group", "subject": "도넛-스테이츠 제품 입고", "message": "제품 입고", "MessageAttributeProductId": "CP-502101", "MessageAttributeProductCnt": "10", "MessageAttributeFactoryId": "FF-500293" }'
 ```
 
-결과 값 <
+결과 값 <br>
 The stock is: 20
 
 ## 다이어그램
