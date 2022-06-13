@@ -1,4 +1,4 @@
-const serverless = require('serverless-http'); //추가
+const serverless = require('serverless-http');
 
 const express = require("express");
 const app = express();

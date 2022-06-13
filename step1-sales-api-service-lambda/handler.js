@@ -66,7 +66,7 @@ app.post("/send", (req, res) => {
               DataType: "String",
             },
           },
-          // https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SQS.html#sendMessage-property
+          // 생성한 SNS ARN을 입력하세요.
           TopicArn: "arn:aws:sns:ap-northeast-2:652217438494:snstest.fifo"
         };
         sns.publish(params, function (err, data) {
