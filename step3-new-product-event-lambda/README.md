@@ -12,9 +12,25 @@
 - 내외부 개발자에게 전달할 새로운 요구사항을 충족시키는 다이어그램과 
 - 인프라 설명 문서가 필요한 상황이다. 
 
+## 목표 
+최종적으로 영업서버에 callback 메시지가 도착하면 실행되는 new-product-envent람다를 통하여 RDS mysql에 재고를 추가하는 람다를 구현하기
+
+## local curl 테스트
+### 제품 추가
+```
+curl --location --request POST 'http://localhost:3000/send'
+--header 'Content-Type: application/json'
+--data-raw '{ "MessageGroupId": "stock-empty-group", "subject": "도넛-스테이츠 제품 입고", "message": "제품 입고", "MessageAttributeProductId": "CP-502101", "MessageAttributeProductCnt": "10", "MessageAttributeFactoryId": "FF-500293" }'
+```
+
+결과 값 <
+The stock is: 20
+
+## 다이어그램
+![image](https://user-images.githubusercontent.com/50437623/173333466-f228e25a-f770-4e8e-b968-94059c639207.png)
+
+
 ## 학습목표 
 - 각각 배웠던 서비스들을 활용해 요구사항에 따라 새로운 인프라 구성 할 수 있다.
 
 
-## 다이어그램
-image.png
