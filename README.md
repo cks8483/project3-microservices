@@ -11,7 +11,7 @@
 주문이 요청되면 일정 시간이 지난 후 창고에 재고가 증가합니다.
 
 ## 다이어그램
-![pj3Diagram](https://user-images.githubusercontent.com/50437623/173351087-01b24087-4bce-4f43-99c4-72bf1ece4ea1.png)
+![pj3Diagram (1)](https://user-images.githubusercontent.com/50437623/173355391-cf5c3261-0f26-4311-a388-b46b0550a51c.png)
 
 
 ## 기능 설명
