@@ -5,14 +5,15 @@ Sales API를 lambda 형태로 리팩토링 한 후, serverless framework로 배�
 ## 배포 방법
 1. 우선 aws 프로필을 환경변수로 적용해준다
 export AWS_PROFILE=cch # 자신의 AWS 프로필 이름을 정해주세요.
+(PROFILE 생성 방법 https://velog.io/@cks8483/aws-cli-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 2. yaml파일과 handler.js 작성 후 배포
-```serverless remove --aws-profile cch --region ap-northeast-2 --stage dev --verbose```
+```serverless deploy --aws-profile cch --region ap-northeast-2 --stage dev --verbose```
 
 ## clean up
 ```serverless remove --aws-profile cch --region ap-northeast-2 --stage dev --verbose```
 
 
-## 재고 확인
+## 로컬에서 curl을 이용한 구매 요청 테스트
 ```
 curl --location --request POST 'http://localhost:3000/send' \
 --header 'Content-Type: application/json' \
