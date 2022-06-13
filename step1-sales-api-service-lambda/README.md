@@ -122,10 +122,10 @@ curl --location --request POST 'http://localhost:3000/send' \
 }'
 ```
 
-재고가 있을 시
+재고가 있을 시 <br>
 message : 판매 완료
 
-재고가 없을 때
+재고가 없을 때 <br>
 message : 재고 부족, 제품 생산 요청!
 
 ## 참고 
