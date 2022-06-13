@@ -1,0 +1,17 @@
+service: project3-pract-step4
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  
+functions:
+  status:
+    handler: handler.handler
+    events:
+      - httpApi:
+          method: post
+          path: /send
+
+plugins:
+  - serverless-lift

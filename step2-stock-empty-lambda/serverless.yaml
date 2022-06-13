@@ -1,0 +1,17 @@
+service: project3-pract-step5
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  
+functions:
+  status:
+    handler: handler.handler
+    events:
+      - sqs: arn:aws:sqs:ap-northeast-2:652217438494:sqstest.fifo
+
+    
+
+plugins:
+  - serverless-lift
