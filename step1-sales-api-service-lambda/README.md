@@ -135,4 +135,3 @@ open https://www.npmjs.com/package/serverless-http
 ## 학습 목표
 - 람다용으로 만들어지지 않은 node.js 프로젝트를 람다로 변환 할 수 있다.
 - RDS mysql을 이용 할 수 있다.
-- SNS, SQS를 이용 할 수 있다.
