@@ -10,7 +10,7 @@ export AWS_PROFILE=cch (자신의 AWS 프로필 이름을 정해주세요) <br>
 2. yaml파일과 handler.js 작성 후 배포
 ```serverless deploy --aws-profile cch --region ap-northeast-2 --stage dev --verbose```
 
-## clean up
+## Clean Up
 ```serverless remove --aws-profile cch --region ap-northeast-2 --stage dev --verbose```
 
 ## RDS에 데이터값 추가 하기
