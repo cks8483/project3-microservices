@@ -2,7 +2,7 @@
 
 Sales API를 lambda 형태로 리팩토링 한 후, serverless framework로 배포합니다.
 
-## 배포 방법
+## Lambda 함수 배포 방법
 1. 우선 aws 프로필을 환경변수로 적용해준다 <br>
 export AWS_PROFILE=cch (자신의 AWS 프로필 이름을 정해주세요) <br>
 (PROFILE 생성 방법 https://velog.io/@cks8483/aws-cli-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
