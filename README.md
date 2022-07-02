@@ -23,7 +23,7 @@
 
 ## 아키텍처 설명
 1. sales 람다 배포 후 mysql db생성 후 연결, sns생성, sqs 생성
-2. mysqsl 쿼리 작성, sales 람다를 생성한 sns로 연결 sns에서 sqs구독
+2. mySQL 쿼리 작성, sales 람다를 생성한 sns로 연결 sns에서 sqs구독
 3. sqs에서 메시지를 보내는데 실패한 메시지를 담아둘 dead_letter_queue와 연결
 4. sqs에서 메시지가 전송될 때를 트리거로 하여 공장 서버에 재고부족 메시지 보내주는 stock-empty-lambda 람다 배포
 5. 공장 서버는 영업 서버 api로 생성한 수 만큼 전송
