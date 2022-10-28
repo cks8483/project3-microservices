@@ -1,6 +1,6 @@
 # project3-microservices
 ## 시나리오
-<도넛-스테이츠>는 부산의 명물 부산도너츠를 판매합니다.
+부산의 명물 부산도너츠를 판매합니다.
 웹사이트를 통해서 주문 버튼을 누르는 것으로 구매(Sales API)가 가능합니다.
 창고에 재고가 있다면 재고가 감소하고 구매가 완료됩니다.
 유튜브스타 hoyong.LEE가 부산도너츠가 맛있다고 영상을 올렸습니다.
@@ -12,6 +12,7 @@
 
 ## 다이어그램
 ![pj3](https://user-images.githubusercontent.com/50437623/198676882-8688ca8b-7c18-4698-aadf-a352cca0e37d.png)
+
 
 
 ## 기능 설명
@@ -31,4 +32,7 @@
 
 
 ## 추가 설명
-자세한 API 설명은 각 레포에 Readme를 통해 설명
+1번 step1-sales-api-service-lambda : 도넛 판매, DB연동
+2번 step2-stock-empty-lambda : 재고부족을 트리거로 SNS->SQS->재고요청람다 실행 
+3번 step3-new-product-event-lambda : API도착시 DB재고 변경람다 실행
+더 자세한 API 설명은 각 레포에 Readme를 통해 설명
